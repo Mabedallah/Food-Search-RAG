@@ -40,7 +40,8 @@ FoodSearch is a full-stack web application that combines a vector database with 
 ├── rag_engine/
 │   ├── ingest.py        # Data ingestion and vector embedding pipeline
 │   └── search.py        # Search and retrieval augmented generation logic
-├── food_recipes.csv     # Recipe dataset
+├── data/
+│   └── food_recipes.csv     # Recipe dataset
 └── README.md
 ```
 
