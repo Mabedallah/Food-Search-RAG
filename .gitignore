@@ -1,0 +1,38 @@
+# ==========================================
+# Global / OS ignores
+# ==========================================
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+
+# ==========================================
+# 1. RAG Engine Ignores (Python & Chroma)
+# ==========================================
+# Ignore the Python virtual environment
+rag_engine/venv/
+rag_engine/.venv/
+rag_engine/data/
+**/__pycache__/
+*.pyc
+
+# CRITICAL: Ignore your local SQLite vector database
+# You do not want gigabytes of raw local vector databases pushed to GitHub!
+rag_engine/chroma_db/
+
+# ==========================================
+# 2. Backend Ignores (FastAPI)
+# ==========================================
+backend/venv/
+backend/.venv/
+
+# ==========================================
+# 3. Frontend Ignores (React / Node)
+# ==========================================
+# Ignore the massive Node modules folder
+frontend/node_modules/
+
+# Ignore production build artifacts
+frontend/dist/
+frontend/build/
